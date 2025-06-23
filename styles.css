@@ -1,0 +1,119 @@
+<link rel="stylesheet" href="style.css">
+/* Importing Acme & Acme Light (via Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+  --primary: #4B2354;     /* deep plum */
+  --accent: #F2DADF;      /* blush pink */
+  --bg-light: #FAF9F6;    /* ivory */
+  --text-dark: #2B2B2B;   /* near-black */
+  --text-light: #666;
+  --font-display: 'Acme', sans-serif;
+  --font-body: 'Acme', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--accent);
+}
+
+header h1 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--accent);
+  color: var(--text-dark);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+section {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-family: var(--font-display);
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+}
+
