@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="style.css">
-/* Importing Acme & Acme Light (via Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme:ital,wght@0,300;0,400;1,300&display=swap');
+/* Importing Unica One from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 :root {
   --primary: #4B2354;     /* deep plum */
@@ -9,8 +8,8 @@
   --bg-light: #FAF9F6;    /* ivory */
   --text-dark: #2B2B2B;   /* near-black */
   --text-light: #666;
-  --font-display: 'Acme', sans-serif;
-  --font-body: 'Acme', sans-serif;
+  --font-display: 'Unica One', sans-serif;
+  --font-body: 'Unica One', sans-serif;
 }
 
 * {
