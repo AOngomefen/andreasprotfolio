@@ -93,3 +93,42 @@ header {
     font-size: 1rem;
   }
 }
+.scroll-down-glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.8rem;
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: 50%;
+  background: rgba(173, 216, 230, 0.2); /* light bluish tint */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto 0;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.scroll-down-glass:hover {
+  transform: translateY(6px);
+  background: rgba(173, 216, 230, 0.3);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  color: var(--text-dark);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
