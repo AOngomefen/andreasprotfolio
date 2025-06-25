@@ -59,18 +59,21 @@ header {
 }
 
 .name-box h3 {
+  font-family: 'Unica One', sans-serif;
   font-weight: 300;
   color: var(--text-light);
   margin-top: 0.5rem;
 }
 
 .definition-box ol {
+  font-family: 'Unica One', sans-serif;
   margin-left: 1.2rem;
   font-weight: 300;
   color: var(--text-dark);
 }
 
 .definition-box h4 {
+  font-family: 'Unica One', sans-serif;
   margin-top: 1rem;
   font-weight: 400;
   color: var(--primary);
